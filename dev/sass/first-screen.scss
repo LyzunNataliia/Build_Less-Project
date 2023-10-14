@@ -1,0 +1,20 @@
+.build-item {
+	fill: #00a2ff00;
+	stroke: #00a2ff00;
+	fill-opacity: 0.36;
+	stroke-width: 5px;
+	transition: 0.3s;
+	cursor: pointer;
+	&:hover {
+		fill: #00a3ff;
+		stroke: #00a3ff;
+		fill-opacity: 0.36;
+	}
+	&.sold {
+		fill: #ff4800ae;
+		stroke: #ff4800;
+		fill-opacity: 0.36;
+		stroke-width: 5px;
+		cursor: url(./assets/img/cursor-cancel.png) 2 2, pointer;
+	}
+}
