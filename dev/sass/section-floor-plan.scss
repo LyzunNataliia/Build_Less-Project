@@ -1,0 +1,32 @@
+.page-floor-plan {
+	.template-container {
+		flex-direction: column;
+	}
+	.view-box {
+		overflow-x: auto;
+		svg {
+			min-width: 800px;
+		}
+	}
+}
+
+.flat {
+	&.active {
+		.plan {
+			fill: #13c72e95;
+			stroke: #42fb5e;
+			stroke-width: 5px;
+		}
+	}
+}
+
+.plan {
+	fill: #f0f8ff00;
+	stroke: #ff000000;
+	cursor: pointer;
+	&:hover {
+		fill: #74ff893c;
+		stroke: #42fb5e;
+		stroke-width: 3px;
+	}
+}
