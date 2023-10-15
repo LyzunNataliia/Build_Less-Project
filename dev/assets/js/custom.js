@@ -6,7 +6,6 @@ const optionStatus = document.querySelector("#option-status");
 const informationDescription = document.querySelector(
 	"#information-description"
 );
-console.log(buildItem);
 
 buildItem.forEach((item) => {
 	const isSold = item.classList.contains("sold");
@@ -26,7 +25,9 @@ buildItem.forEach((item) => {
 		optionFloors.innerHTML = itemFloorst;
 		optionFlats.innerHTML = itemFlats;
 		informationDescription.innerHTML = itemDescription;
-		isSold ? (optionStatus.innerHTML = "(sould out)") : null;
+		isSold
+			? (optionStatus.innerHTML = "(sould out)")
+			: (optionStatus.innerHTML = "");
 	}
 });
 
